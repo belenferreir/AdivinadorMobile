@@ -128,6 +128,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
 
 
 .vscode
@@ -206,3 +207,5 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+=======
+>>>>>>> 552fb1807d1b533d44f8d3d3094309344e8b37fd
