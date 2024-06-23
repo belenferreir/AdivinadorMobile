@@ -3,10 +3,10 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 interface Props {
   label: string;
-  onClick: () => void;
+  onPress: () => void;
 }
 
-const Boton: React.FC<Props> = ({ label, onClick }) => {
+const Boton: React.FC<Props> = ({ label, onPress }) => {
   const getButtonStyle = () => {
     switch (label.toLowerCase()) {
       case 'iniciar': return styles.iniciar;
@@ -18,7 +18,7 @@ const Boton: React.FC<Props> = ({ label, onClick }) => {
   };
 
   return (
-    <TouchableOpacity style={[styles.button, getButtonStyle()]} onPress={onClick}>
+    <TouchableOpacity style={[styles.button, getButtonStyle()]} onPress={onPress}>
       <Text style={styles.text}>{label}</Text>
     </TouchableOpacity>
   );
@@ -49,4 +49,3 @@ const styles = StyleSheet.create({
 });
 
 export default Boton;
-
